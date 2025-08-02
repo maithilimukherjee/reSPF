@@ -1,9 +1,15 @@
-export default function App() {
+import React from 'react'
+import Navbar from './components/Navbar'
+import './index.css'
+import Mains from './components/Mains'
+
+const App = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-yellow-100">
-      <div className="text-orange-700 p-4 rounded">
-        your SPF is your BFF 😎
-      </div>
+    <div>
+      <Navbar />
+      <Mains />
     </div>
-  );
+  )
 }
+
+export default App
